@@ -1,0 +1,75 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+}
+
+.app-header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #ff6b35;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #ff6b35, #f7b731);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app-header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.camera-section {
+  flex: 1;
+  min-height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
+}
+
+.controls-section {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid #ff6b35;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    flex-direction: column;
+  }
+  
+  .controls-section {
+    width: 100%;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+}
